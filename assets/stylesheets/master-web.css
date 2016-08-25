@@ -241,12 +241,12 @@ h1.acd-text-size--triple {
 @media screen and (min-width: 1024px){.acd-hero.acd-hero--pricing{background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../images/hero/_1280x703.jpg)}}
 @media screen and (min-width: 1280px){.acd-hero.acd-hero--pricing{background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../images/hero/_2184x1200.jpg)}}
 
-@media screen and (min-width: 320px){.acd-hero.acd-hero--destdublin{background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../images/hero/_480x264.jpg)}}
-@media screen and (min-width: 480px){.acd-hero.acd-hero--destdublin{background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../images/hero/_480x264.jpg)}}
-@media screen and (min-width: 560px){.acd-hero.acd-hero--destdublin{background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../images/hero/_768x422.jpg)}}
-@media screen and (min-width: 768px){.acd-hero.acd-hero--destdublin{background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../images/hero/_1024x563.jpg)}}
-@media screen and (min-width: 1024px){.acd-hero.acd-hero--destdublin{background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../images/hero/_1280x703.jpg)}}
-@media screen and (min-width: 1280px){.acd-hero.acd-hero--destdublin{background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../images/hero/_2184x1200.jpg)}}
+@media screen and (min-width: 320px){.acd-hero.acd-hero--destdublin{background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../images/hero/ACDStudentPhotos_20140622_006_480x264.jpg)}}
+@media screen and (min-width: 480px){.acd-hero.acd-hero--destdublin{background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../images/hero/ACDStudentPhotos_20140622_006_480x264.jpg)}}
+@media screen and (min-width: 560px){.acd-hero.acd-hero--destdublin{background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../images/hero/ACDStudentPhotos_20140622_006_768x422.jpg)}}
+@media screen and (min-width: 768px){.acd-hero.acd-hero--destdublin{background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../images/hero/ACDStudentPhotos_20140622_006_1024x563.jpg)}}
+@media screen and (min-width: 1024px){.acd-hero.acd-hero--destdublin{background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../images/hero/ACDStudentPhotos_20140622_006_1280x703.jpg)}}
+@media screen and (min-width: 1280px){.acd-hero.acd-hero--destdublin{background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../images/hero/ACDStudentPhotos_20140622_006_2184x1200.jpg)}}
 
 
 accordian h1,.headline {
