@@ -81,7 +81,7 @@
     <div class="acd-hero__content">
       <h1 class="acd-text-size--triple">Destination Dublin</h1>
       <p class="acd-text-size--one-and-half acd-m-bottom--double">See why Dublin is a “Breath of Fresh Air”</p>
-      <a style="margin-right:20px" href="https://www.youtube.com/watch?v=5qTjR8dyJTs" class=" acd-hero-button acd-hero-button--pill js-hero-button-acd-request-info">See Video</a> </div>
+      <a style="margin-right:20px" href="#" class=" acd-hero-button acd-hero-button--pill js-hero-button-acd-request-info video-link-1" data-featherlight="#video1">See Video</a> </div>
   </div>
 </section>
 <div class="l-parallax">
@@ -322,10 +322,15 @@ Boca Raton, FL 33431
   </div>
 </footer></div>
 
-<div class="acd-content-sliding-fade-screen" data-screen="oc-screen"></div>
-<script src="assets/scripts/jquery-2.0.0b2.min.js"></script> 
-<script src="assets/scripts/custom.min.js"></script> 
-<script src="assets/scripts/application.js"></script>
+  
+    
+    <script src="assets/scripts/jquery-2.0.0b2.min.js"></script>
+     <script src="assets/scripts/application.js"></script>
+    
+    <script src="assets/scripts/custom.min.js"></script>
+<div id="video1" class="video-container js-fitvid">
+    <div class="fluid-width-video-wrapper" style="padding-top: 56.25%;"><iframe src="assets/video/dublin-youtube.html" frameborder="0" allowfullscreen="" id="fitvid0"></iframe></div>
+</div>
 <script>
 	
 /*
@@ -466,5 +471,7 @@ $('#graduate-form').toggleClass('is-closed is-open');
 
 });
 </script>
+
+ <div class="acd-content-sliding-fade-screen" data-screen="oc-screen"></div>
 </body>
 </html>
