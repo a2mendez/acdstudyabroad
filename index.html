@@ -589,7 +589,7 @@
                 <div class="acd-gi acd-gi--padded acd-l-size--1-of-1 acd-l-size-l--1-of-2">
                     <div class="acd-tile acd-tile--cta acd-l-container--xxs">
                         <div class="acd-tile__action">
-                            <a href="#" class="acd-button acd-button--pill" itemprop="url">
+                            <a href="#" class="acd-button acd-button--pill js-button-request-info" itemprop="url">
                                 <span class="acd-button__text">Request info</span>
                             </a>
                         </div>
@@ -695,18 +695,132 @@ Boca Raton, FL 33431
 <div id="video0" class="video-container js-fitvid">
     <div class="fluid-width-video-wrapper" style="padding-top: 56.25%;"><iframe src="assets/video/acd-youtube.html" frameborder="0" allowfullscreen="" id="fitvid0"></iframe></div>
 </div>
+
+<!--    popup request form    -->
+
+<div id="ri-forms">
+    <div id="form-request-info" class="is-open">
+        <div class="popup-inner">
+            <h2 class="hiddenStructure">Request info form</h2>
+            
+<div class="pfg-embedded">
+    
+    
+        
+        <div class="pfg-form formid-request-info">
+      <form name="edit_form" method="post" enctype="multipart/form-data" class="" action="http://www.lynn.edu/lela/index_html" id="fg-base-edit">
+
+   
+            <div id="pfg-fieldwrapper">
+
+        <div class="field ArchetypesStringWidget " id="archetypes-fieldname-first-name">
+          <span></span>
+          <label class="formQuestion" for="first-name">First name</label>
+          <span class="fieldRequired" title="Required">
+            (Required)
+          </span>
+          <div class="formHelp" id="first-name_help"></div>
+          
+          <div class="fieldErrorBox"></div>
+          <input type="text" name="first-name" class="blurrable firstToFocus" id="first-name" size="30" maxlength="255">
+        </div>
+      
+
+      
+        <div class="field ArchetypesStringWidget " id="archetypes-fieldname-last-name-surname">
+          <span></span>
+          <label class="formQuestion" for="last-name-surname">Last name (surname)</label>
+          <span class="fieldRequired" title="Required">
+            (Required)
+          </span>
+          <div class="formHelp" id="last-name-surname_help"></div>
+          
+          <div class="fieldErrorBox"></div>
+          <input type="text" name="last-name-surname" class="blurrable firstToFocus" id="last-name-surname" size="30" maxlength="255">
+        </div>
+
+        <div class="field ArchetypesStringWidget " id="archetypes-fieldname-email">
+          <span></span>
+          <label class="formQuestion" for="email">Email</label>
+          <span class="fieldRequired" title="Required">
+            (Required)
+          </span>
+          <div class="formHelp" id="email_help"></div>
+          
+          <div class="fieldErrorBox"></div>
+          <input type="text" name="email" class="blurrable firstToFocus" id="email" size="30" maxlength="255">
+        </div>
+      
+
+        <div class="field ArchetypesIntegerWidget " id="archetypes-fieldname-age-3-4">
+          <span></span>
+          <label class="formQuestion" for="age-3-4">How many children age 3-4?</label>
+          
+          <div class="formHelp" id="age-3-4_help"></div>
+          
+          <div class="fieldErrorBox"></div>
+          <input class="blurrable firstToFocus" type="text" name="age-3-4" size="30" maxlength="255" id="age-3-4">
+        </div>
+       
+      
+        <div class="field ArchetypesIntegerWidget " id="archetypes-fieldname-age-5-6">
+          <span></span>
+          <label class="formQuestion" for="age-5-6">How many children age 5-6?</label>
+          
+          <div class="formHelp" id="age-5-6_help"></div>
+          
+          <div class="fieldErrorBox"></div>
+          <input class="blurrable firstToFocus" type="text" name="age-5-6" size="30" maxlength="255" id="age-5-6">
+        </div>
+               
+            </div>
+                 
+          <div class="formControls">
+
+            <input type="hidden" name="fieldset" value="default">
+            <input type="hidden" name="lela-request-info.form.submitted" value="1">
+            <input type="hidden" name="add_reference.field:record" value="">
+            <input type="hidden" name="add_reference.type:record" value="">
+            <input type="hidden" name="add_reference.destination:record" value="">
+
+            
+
+            <input type="hidden" name="last_referer" value="http://www.lynn.edu/forms/lynn-early-learning-academy">
+
+ 
+            <input type="hidden" name="_authenticator" value="b27fddfb79dd9ab99e15dba44ef40cb40bc64288">
+
+  
+                <input class="context" type="submit" name="form_submit" value="Submit">
+                
+ 
+
+          </div>
+
+      </form>
+
+    </div>
+        
+    
+</div>
+
+            
+            <div class="js-button-close-request-info"> </div>
+        </div>
+    </div>
+</div>
     
  
     
     <script>
 	
-/*
+
 $('.js-button-popup').click(function(e) {
     e.preventDefault();
     $('#request-info-form').toggleClass('is-closed is-open');
     _gaq.push(['_trackEvent', 'Forms', 'Open', 'Request info']);
 });
-
+/*
 $('.js-button-ugrad').click(function(e) {
     $('#request-info-form').toggleClass('is-closed is-open');
     _gaq.push(['_trackEvent', 'Forms', 'Open', 'Undergraduate request info']);
@@ -772,10 +886,10 @@ $('.tracker.case-study-2015').click(function(e) {
 
 */
 // Close pop-ups
-$('.js-button-close-popup').click(function(e) {
+$('.js-button-close-request-info').click(function(e) {
     e.preventDefault();
-    $('#request-info-form').toggleClass('is-closed is-open');
-    _gaq.push(['_trackEvent', 'Forms', 'Close', 'Request info']);
+    $('#form-request-info').toggleClass('is-closed is-open');
+   /* _gaq.push(['_trackEvent', 'Forms', 'Close', 'Request info']);*/
 });
 
 $('.js-button-close-ilynn').click(function(e) {
@@ -812,7 +926,7 @@ $('.video-link-3').featherlight('#video3', {
 
 $(document).ready(function(){
 
-if ( $('#request-info-form .portalMessage.error').length > 0  ) {
+if ( $('#form-request-info .portalMessage.error').length > 0  ) {
 $('#request-info-form').toggleClass('is-closed is-open');
 }
 
@@ -824,8 +938,8 @@ if ( $('#graduate-form .portalMessage.error').length > 0  ) {
 $('#graduate-form').toggleClass('is-closed is-open');
 }
 
-if ( $('#request-info-form .thanks').length > 0  ) {
-$('#request-info-form').toggleClass('is-closed is-open');
+if ( $('#form-request-info .thanks').length > 0  ) {
+$('#form-request-info').toggleClass('is-closed is-open');
 }
 
 if ( $('#ilynn-form .thanks').length > 0  ) {
