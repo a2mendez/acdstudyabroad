@@ -4,13 +4,13 @@
         <meta charset="utf-8">
         <meta name="robots" content="index,follow">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>ACD study abroad</title>
+        <title>ACD study abroad - Schedule Pricing</title>
 
         <!-- Favicons -->
 
         <!-- Stylesheets -->
         <link rel="stylesheet" href="assets/stylesheets/master-web.css">
-        <!--link rel="stylesheet" href="assets/stylesheets/lynnedu-landing.css"-->
+   
     </head>
   <body class="acd-body">
     
@@ -1157,73 +1157,14 @@ Boca Raton, FL 33431
 $('.js-button-request-info').click(function(e) {
     e.preventDefault();
     $('#form-request-info').toggleClass('is-closed is-open');
-    _gaq.push(['_trackEvent', 'Forms', 'Open', 'Request info']);
-});
-/*
-$('.js-button-ugrad').click(function(e) {
-    $('#request-info-form').toggleClass('is-closed is-open');
-    _gaq.push(['_trackEvent', 'Forms', 'Open', 'Undergraduate request info']);
+   /* _gaq.push(['_trackEvent', 'Forms', 'Open', 'Request info']);*/
 });
 
-$('.js-button-ilynn').click(function(e) {
-    e.preventDefault();
-    $('#request-info-form').toggleClass('is-closed is-open');
-    $('#ilynn-form').toggleClass('is-closed is-open');
-    _gaq.push(['_trackEvent', 'Forms', 'Open', 'iLynn request info']);
-});
-
-$('.js-button-graduate').click(function(e) {
-    e.preventDefault();
-    $('#request-info-form').toggleClass('is-closed is-open');
-    $('#graduate-form').toggleClass('is-closed is-open');
-    _gaq.push(['_trackEvent', 'Forms', 'Open', 'Graduate request info']);
-});
 
 // Events
-$('#ipad-faq-general.is-closed').click(function(e) {
-    _gaq.push(['_trackEvent', 'Accordion', 'Open', 'iPad FAQ general']);
-});
-$('#ipad-faq-general.is-open').click(function(e) {
-    _gaq.push(['_trackEvent', 'Accordion', 'Close', 'iPad FAQ general']);
-});
-$('#ipad-faq-pro.is-closed').click(function(e) {
-    _gaq.push(['_trackEvent', 'Accordion', 'Open', 'iPad FAQ pro']);
-});
-$('#ipad-faq-pro.is-open').click(function(e) {
-    _gaq.push(['_trackEvent', 'Accordion', 'Close', 'iPad FAQ pro']);
-});
-$('#ipad-faq-ugrad.is-closed').click(function(e) {
-    _gaq.push(['_trackEvent', 'Accordion', 'Open', 'iPad FAQ undergraduate']);
-});
-$('#ipad-faq-ugrad.is-open').click(function(e) {
-    _gaq.push(['_trackEvent', 'Accordion', 'Close', 'iPad FAQ undergraduate']);
-});
-$('#ipad-faq-grad.is-closed').click(function(e) {
-    _gaq.push(['_trackEvent', 'Accordion', 'Open', 'iPad FAQ graduate']);
-});
-$('#ipad-faq-grad.is-open').click(function(e) {
-    _gaq.push(['_trackEvent', 'Accordion', 'Close', 'iPad FAQ graduate']);
-});
-$('#ipad-faq-ilynn.is-closed').click(function(e) {
-    _gaq.push(['_trackEvent', 'Accordion', 'Open', 'iPad FAQ iLynn']);
-});
-$('#ipad-faq-ilynn.is-open').click(function(e) {
-    _gaq.push(['_trackEvent', 'Accordion', 'Close', 'iPad FAQ iLynn']);
-});
-$('.js-button-apply').click(function(e) {
-    _gaq.push(['_trackEvent', 'Button', 'Open', 'Apply to Lynn']);
-});
-$('.js-button-visit').click(function(e) {
-    _gaq.push(['_trackEvent', 'Button', 'Open', 'Schedule a visit']);
-});
-$('.tracker.case-study-2014').click(function(e) {
-    _gaq.push(['_trackEvent', 'Link', 'Open', 'Case study 2014']);
-});
-$('.tracker.case-study-2015').click(function(e) {
-    _gaq.push(['_trackEvent', 'Link', 'Open', 'Case study 2015']);
-});
 
-*/
+
+
 // Close pop-ups
 $('.js-button-close-request-info').click(function(e) {
     e.preventDefault();
@@ -1231,37 +1172,8 @@ $('.js-button-close-request-info').click(function(e) {
    /* _gaq.push(['_trackEvent', 'Forms', 'Close', 'Request info']);*/
 });
 
-$('.js-button-close-ilynn').click(function(e) {
-    e.preventDefault();
-    $('#ilynn-form').toggleClass('is-closed is-open');
-    _gaq.push(['_trackEvent', 'Forms', 'Close', 'iLynn request info']);
-});
-
-$('.js-button-close-graduate').click(function(e) {
-    e.preventDefault();
-    $('#graduate-form').toggleClass('is-closed is-open');
-    _gaq.push(['_trackEvent', 'Forms', 'Close', 'Graduate request info']);
-});
 
 
-
-/* 
-$('.video-link-1').featherlight('#video1', {
-    afterOpen: function(event){
-        _gaq.push(['_trackEvent', 'Videos', 'Open', 'https://youtu.be/uHtCepywhdE']);
-    }
-});
-$('.video-link-2').featherlight('#video2', {
-    afterOpen: function(event){
-        _gaq.push(['_trackEvent', 'Videos', 'Open', 'https://youtu.be/tPNS1-i9rBM']);
-    }
-});
-$('.video-link-3').featherlight('#video3', {
-    afterOpen: function(event){
-        _gaq.push(['_trackEvent', 'Videos', 'Open', 'https://youtu.be/_LfYWVE3Z5g']);
-    }
-});
-*/
 
 $(document).ready(function(){
 
@@ -1269,8 +1181,8 @@ if ( $('#request-info-form .portalMessage.error').length > 0  ) {
 $('#request-info-form').toggleClass('is-closed is-open');
 }
 
-if ( $('#ilynn-form .portalMessage.error').length > 0  ) {
-$('#ilynn-form').toggleClass('is-closed is-open');
+if ( $('#il-form .portalMessage.error').length > 0  ) {
+$('#il-form').toggleClass('is-closed is-open');
 }
 
 if ( $('#graduate-form .portalMessage.error').length > 0  ) {
@@ -1281,8 +1193,8 @@ if ( $('#request-info-form .thanks').length > 0  ) {
 $('#request-info-form').toggleClass('is-closed is-open');
 }
 
-if ( $('#ilynn-form .thanks').length > 0  ) {
-$('#ilynn-form').toggleClass('is-closed is-open');
+if ( $('#il-form .thanks').length > 0  ) {
+$('#il-form').toggleClass('is-closed is-open');
 }
 
 if ( $('#graduate-form .thanks').length > 0  ) {
