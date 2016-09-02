@@ -718,13 +718,13 @@ strong, b {
 .acd-content-sliding-fade-screen {
     position: fixed;
     top: 0;
-    right: 0;
+    right: 466px;
     bottom: 0;
     left: 0;
     background: #000;
     opacity: 0;
     visibility: hidden;
-    z-index: 888;
+    z-index: 8888;
 }
 
 .acd-content-sliding-fade-screen.is-visible {

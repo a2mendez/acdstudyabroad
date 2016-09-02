@@ -91,17 +91,7 @@
         opacity: 0.4;
         visibility: visible;
     }
-    .acd-content-sliding-fade-screen {
-        background: rgb(0, 0, 0) none repeat scroll 0 0;
-        bottom: 0;
-        left: 0;
-        opacity: 0;
-        position: fixed;
-        right: 0;
-        top: 0;
-        visibility: hidden;
-        z-index: 888;
-    }
+ 
     .acd-content-sliding-container {
         background: rgb(255, 255, 255) none repeat scroll 0 0;
         bottom: 0;
@@ -385,13 +375,17 @@
           <div class="acd-grid acd-l-wrap">
             <div class="acd-gi acd-gi--padded acd-l-size--1-of-1 acd-l-size-l--1-of-2">
               <div class="acd-tile acd-tile--cta acd-l-container--xxs">
-                <div class="acd-tile__action"> <a href="#" class="acd-button acd-button--pill" itemprop="url"> <span class="acd-button__text">Request info</span> </a> </div>
+                 <div class="acd-tile__action js-button-request-info">
+                            <a href="#" class="acd-button acd-button--pill " itemprop="url">
+                                <span class="acd-button__text ">Request info</span>
+                            </a>
+                        </div>
                 <div class="acd-tile__detail"> How would you like to hear from us? </div>
               </div>
             </div>
             <div class="acd-gi acd-gi--padded acd-l-size--1-of-1 acd-l-size-l--1-of-2">
               <div class="acd-tile acd-tile--cta acd-l-container--xxs">
-                <div class="acd-tile__action"> <a href="#" class="acd-button acd-button--pill" itemprop="url"> <span class="acd-button__text">Apply</span> </a> </div>
+                <div class="acd-tile__action"> <a target="_blank" href="https://acd.abroadoffice.net/login.html" class="acd-button acd-button--pill" itemprop="url"> <span class="acd-button__text">Apply</span> </a> </div>
                 <div class="acd-tile__detail"> Complete your application and secure your spot today. </div>
               </div>
             </div>
@@ -430,7 +424,8 @@ Boca Raton, FL 33431
              <ul class="acd-list--horizontal ">
               <li class="acd-list__item"><span style="white-space: nowrap;">Office hours: Monday &ndash; Friday, 9 am &ndash; 5 pm ET</span></li>
                                 <li class="acd-list__item"><span style="white-space: nowrap;">Email: <a href="mailto:info@acdstudyabroad.com"><span style="color:#8c8e90">info@acdstudyabroad.com</span></a></span></li>
-                 <li>Phone: +1 800-576-2441</li>
+                       <br> <li class="acd-list__item" >Phone: +1 561-237-7256</li>
+               <li class="acd-list__item" >&nbsp;|&nbsp; 1-800-576-2441</li>
              
             </ul>
           </div>
@@ -459,15 +454,109 @@ Boca Raton, FL 33431
 </div>
 
 
+<!--    popup request form    -->
+
+<div id="ri-forms">
+    <div id="form-request-info" class="is-closed">
+        <div class="popup-inner">
+            <h2 class="hiddenStructure">Request info form</h2>
+            
+<div class="pfg-embedded">
+    
+    
+        
+        <div class="pfg-form formid-request-info">
+      <form name="edit_form" method="post" enctype="multipart/form-data" class="" action="http://www.lynn.edu/lela/index_html" id="fg-base-edit">
+
+   
+            <div id="pfg-fieldwrapper">
+
+        <div class="field ArchetypesStringWidget " id="archetypes-fieldname-first-name">
+          <span></span>
+          <label class="formQuestion" for="first-name">First name</label>
+          <span class="fieldRequired" title="Required">
+            (Required)
+          </span>
+          <div class="formHelp" id="first-name_help"></div>
+          
+          <div class="fieldErrorBox"></div>
+          <input type="text" name="first-name" class="blurrable firstToFocus" id="first-name" size="30" maxlength="255">
+        </div>
+      
+
+      
+        <div class="field ArchetypesStringWidget " id="archetypes-fieldname-last-name-surname">
+          <span></span>
+          <label class="formQuestion" for="last-name-surname">Last name (surname)</label>
+          <span class="fieldRequired" title="Required">
+            (Required)
+          </span>
+          <div class="formHelp" id="last-name-surname_help"></div>
+          
+          <div class="fieldErrorBox"></div>
+          <input type="text" name="last-name-surname" class="blurrable firstToFocus" id="last-name-surname" size="30" maxlength="255">
+        </div>
+
+        <div class="field ArchetypesStringWidget " id="archetypes-fieldname-email">
+          <span></span>
+          <label class="formQuestion" for="email">Email</label>
+          <span class="fieldRequired" title="Required">
+            (Required)
+          </span>
+          <div class="formHelp" id="email_help"></div>
+          
+          <div class="fieldErrorBox"></div>
+          <input type="text" name="email" class="blurrable firstToFocus" id="email" size="30" maxlength="255">
+        </div>
+      
+
+       
+               
+            </div>
+                 
+          <div class="formControls">
+
+            <input type="hidden" name="fieldset" value="default">
+            <input type="hidden" name="lela-request-info.form.submitted" value="1">
+            <input type="hidden" name="add_reference.field:record" value="">
+            <input type="hidden" name="add_reference.type:record" value="">
+            <input type="hidden" name="add_reference.destination:record" value="">
+
+            
+
+            <input type="hidden" name="last_referer" value="http://www.lynn.edu/forms/lynn-early-learning-academy">
+
+ 
+            <input type="hidden" name="_authenticator" value="b27fddfb79dd9ab99e15dba44ef40cb40bc64288">
+
+  
+                <input class="context" type="submit" name="form_submit" value="Submit">
+                
+ 
+
+          </div>
+
+      </form>
+
+    </div>
+        
+    
+</div>
+
+            
+            <div class="js-button-close-request-info"> </div>
+        </div>
+    </div>
+</div>
 <script>
 	
-/*
-$('.js-button-popup').click(function(e) {
+
+$('.js-button-request-info').click(function(e) {
     e.preventDefault();
-    $('#request-info-form').toggleClass('is-closed is-open');
+    $('#form-request-info').toggleClass('is-closed is-open');
     _gaq.push(['_trackEvent', 'Forms', 'Open', 'Request info']);
 });
-
+/*
 $('.js-button-ugrad').click(function(e) {
     $('#request-info-form').toggleClass('is-closed is-open');
     _gaq.push(['_trackEvent', 'Forms', 'Open', 'Undergraduate request info']);
@@ -533,10 +622,10 @@ $('.tracker.case-study-2015').click(function(e) {
 
 */
 // Close pop-ups
-$('.js-button-close-popup').click(function(e) {
+$('.js-button-close-request-info').click(function(e) {
     e.preventDefault();
-    $('#request-info-form').toggleClass('is-closed is-open');
-    _gaq.push(['_trackEvent', 'Forms', 'Close', 'Request info']);
+    $('#form-request-info').toggleClass('is-closed is-open');
+   /* _gaq.push(['_trackEvent', 'Forms', 'Close', 'Request info']);*/
 });
 
 $('.js-button-close-ilynn').click(function(e) {
