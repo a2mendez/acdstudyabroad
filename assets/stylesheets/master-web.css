@@ -1241,3 +1241,6 @@ button, input[type="submit"] {
     background: #b3d57d;
     cursor: pointer;
 } 
+i { 
+    font-style: italic;
+}
