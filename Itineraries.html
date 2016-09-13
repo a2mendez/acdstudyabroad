@@ -174,7 +174,34 @@
 <p><h3 class="acd-tile__title">Schedule and credits</h3></p>
 <p>Dates and activities are subject to change without prior notice. </p>
 
-<p><h3 class="acd-tile__title">Spring Semester 2017</h3></p>
+
+   
+        </div>
+        
+        
+     
+	</div>
+    </section>
+           
+            
+            <div class="acd-panel">
+             
+
+   <!--faq start here-->
+
+  
+
+     <section id="faq" class="l-page-container max-w">
+        <div class="panel">
+            <h1>General Questions</h1>
+           
+                
+            <div class="accordion" style="margin-top: -3em; margin-bottom:4em">
+            
+              <section style="margin-bottom: 1em;" class="js-expand ex-content js-enabled is-closed" id="ipad-faq-general">
+                    <header class="ex-handle tint triangle"><h2 class="sectionhead-1">Spring Semester 2017</h2></header>
+                    <div class="ex-panel text">
+                              <p><h3 class="acd-tile__title">Spring Semester 2017</h3></p>
 <p><b>Credits:</b> 15 semester / 22.5 quarter hours </p>
  <p>   <table class="table table-striped">
             <tbody><tr class="tabletop">
@@ -283,29 +310,15 @@
             </tbody>
             </table>
             </p>
-   
-        </div>
         
         
-     
-	</div>
-    </section>
-           
+        
+
+                    </div>
+                </section>
             
-            <div class="acd-panel">
-             
-
-   <!--faq start here-->
-
-  
-
-     <section id="faq" class="l-page-container max-w">
-        <div class="panel">
-            <h1>General Questions</h1>
-           
-                
-            <div class="accordion" style="margin-top: -3em; margin-bottom:4em">
-                <section style="margin-bottom: 1em;" class="js-expand ex-content js-enabled is-closed" id="ipad-faq-general">
+            
+                <section style="margin-bottom: 1em;" class="js-expand ex-content js-enabled " id="ipad-faq-general">
                     <header class="ex-handle tint triangle"><h2 class="sectionhead-1">Summer Session 1 2017</h2></header>
                     <div class="ex-panel text">
                               <p><h3 style="margin-bottom:-18px" class="acd-tile__title">
@@ -964,6 +977,7 @@ $('.js-button-request-info').click(function(e) {
 $('.js-button-close-request-info').click(function(e) {
     e.preventDefault();
     $('#form-request-info').toggleClass('is-closed is-open');
+	
    /* _gaq.push(['_trackEvent', 'Forms', 'Close', 'Request info']);*/
 });
 
@@ -995,6 +1009,8 @@ $('#il-form').toggleClass('is-closed is-open');
 if ( $('#graduate-form .thanks').length > 0  ) {
 $('#graduate-form').toggleClass('is-closed is-open');
 }
+
+$('section#ipad-faq-general').first().toggleClass('is-closed is-open');
 
 });
 </script>
