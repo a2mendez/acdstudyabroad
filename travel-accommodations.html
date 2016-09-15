@@ -116,7 +116,7 @@
       <h1 class="acd-text-size--triple">Céad Míle Fáilte!</h1>
       <p class="acd-text-size--one-and-half acd-m-bottom--double">Let ACD Study Abroad be the first of Ireland’s hundred thousand welcomes
 </p>
-      <a style="margin-right:20px" href="thank-you.html" class=" acd-hero-button acd-hero-button--pill js-hero-button-acd-request-info jsbutton-request-info">Request Info</a> 
+      <a style="margin-right:20px" href="thank-you.html" class=" acd-hero-button acd-hero-button--pill js-hero-button-acd-request-info js-button-request-info">Request Info</a> 
 <a target="_blank" href="https://acd.abroadoffice.net/getstarted.html" class="acd-hero-button acd-hero-button--pill js-hero-button-acd-apply">Apply</a> </div>
   </div>
 </section>
@@ -296,7 +296,7 @@
                 <div class="acd-gi acd-gi--padded acd-l-size--1-of-1 acd-l-size-l--1-of-2">
                     <div class="acd-tile acd-tile--cta acd-l-container--xxs">
                         <div class="acd-tile__action">
-                            <a href="thank-you.html" class="acd-button acd-button--pill jsbutton-request-info" itemprop="url">
+                            <a href="thank-you.html" class="acd-button acd-button--pill js-button-request-info" itemprop="url">
                                 <span class="acd-button__text">Request info</span>
                             </a>
                         </div>
@@ -404,93 +404,38 @@ Boca Raton, FL 33431
     <script src="assets/scripts/application.js"></script>
     
     
-    <!--    popup request form    -->
+   <script src="assets/scripts/form-validation.js"></script>
+
+
+<!--    popup request form    -->
+
+
 
 <div id="ri-forms">
     <div id="form-request-info" class="is-closed">
         <div class="popup-inner">
-            <h2 class="hiddenStructure">Request info form</h2>
+            <h2 class="hiddenStructure"><p>Request info form</p></h2>
             
 <div class="pfg-embedded">
     
     
         
-        <div class="pfg-form formid-request-info">
-      <form name="edit_form" method="post" enctype="multipart/form-data" class="" action="#" id="fg-base-edit">
+        <form id="form" name="form" method="post" action="send.php" onsubmit="return Validator(this)">
 
-   
-            <div id="pfg-fieldwrapper">
 
-        <div class="field ArchetypesStringWidget " id="archetypes-fieldname-first-name">
-          <span></span>
-          <label class="formQuestion" for="first-name">First name</label>
-          <span class="fieldRequired" title="Required">
-            (Required)
-          </span>
-          <div class="formHelp" id="first-name_help"></div>
-          
-          <div class="fieldErrorBox"></div>
-          <input type="text" name="first-name" class="blurrable firstToFocus" id="first-name" size="30" maxlength="255">
-        </div>
-      
-
-      
-        <div class="field ArchetypesStringWidget " id="archetypes-fieldname-last-name-surname">
-          <span></span>
-          <label class="formQuestion" for="last-name-surname">Last name (surname)</label>
-          <span class="fieldRequired" title="Required">
-            (Required)
-          </span>
-          <div class="formHelp" id="last-name-surname_help"></div>
-          
-          <div class="fieldErrorBox"></div>
-          <input type="text" name="last-name-surname" class="blurrable firstToFocus" id="last-name-surname" size="30" maxlength="255">
-        </div>
-
-        <div class="field ArchetypesStringWidget " id="archetypes-fieldname-email">
-          <span></span>
-          <label class="formQuestion" for="email">Email</label>
-          <span class="fieldRequired" title="Required">
-            (Required)
-          </span>
-          <div class="formHelp" id="email_help"></div>
-          
-          <div class="fieldErrorBox"></div>
-          <input type="text" name="email" class="blurrable firstToFocus" id="email" size="30" maxlength="255">
-        </div>
-      
-
-       
-               
-            </div>
-                 
-          <div class="formControls">
-
-            <input type="hidden" name="fieldset" value="default">
-            <input type="hidden" name="acd-request-info.form.submitted" value="1">
-            <input type="hidden" name="add_reference.field:record" value="">
-            <input type="hidden" name="add_reference.type:record" value="">
-            <input type="hidden" name="add_reference.destination:record" value="">
-
-            
-
-            <input type="hidden" name="last_referer" value="#">
-
- 
-            <input type="hidden" name="_authenticator" value="b27fddfb79dd9ab99e15dba44ef40cb40bc64288">
-
-  
-                <input class="context" type="submit" name="form_submit" value="Submit">
-                
- 
-
-          </div>
-
-      </form>
-
-    </div>
-        
-    
+<div class="formfield">
+<label for="First name">First Name:</label>
+<p><input type="text" name="formFieldFirstName" id="formFieldFirstName" size="10"></p>
+</div>
+<div class="formfield">
+<label for="Last name">Last Name:</label>
+<p><input type="text" name="formFieldLastName" id="formFieldLastName" size="10"></p>
+</div>
+<div class="formfield">
+<label for="email">E-mail:</label>
+<p><input type="text" name="formField_Email" id="formField_Email" size="10"></p>
+</div>
+<input type="submit"  id="button" class="context">
 </div>
 
             

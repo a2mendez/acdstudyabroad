@@ -1283,3 +1283,8 @@ i {
     display: flex;
     position: relative;
 }
+
+h2.hiddenStructure {
+    font-size: 1.2em;
+    font-weight: 550;
+}

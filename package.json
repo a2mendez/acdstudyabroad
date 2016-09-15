@@ -1,0 +1,26 @@
+{
+  "name": "acdstudyabroad",
+  "version": "1.0.0",
+  "description": "acdstudyabroad website",
+  "main": "index.html",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-cssmin": "^1.0.2",
+    "grunt-contrib-htmlmin": "^2.0.0",
+    "grunt-contrib-uglify": "^2.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/a2mendez/acdstudyabroad.git"
+  },
+  "author": "Antonio Mendez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/a2mendez/acdstudyabroad/issues"
+  },
+  "homepage": "https://github.com/a2mendez/acdstudyabroad#readme"
+}
