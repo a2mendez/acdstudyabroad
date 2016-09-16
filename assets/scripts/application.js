@@ -12911,7 +12911,7 @@ return jQuery;
 
 // SLIDING NAV
 
-'use strict';
+/*'use strict';
 
 $(function () {
   var $ocTrigger = $('[data-trigger]'),
@@ -12942,6 +12942,43 @@ $(function () {
     e.preventDefault();
   });
 });
+*/
+
+
+// SLIDING NAV
+
+
+
+$(function() {
+  var $ocTrigger = $('[data-trigger]'),
+      $ocOverlay = $('[data-overlay]'),
+      $ocClose   = $('[data-close]'),
+      $ocScreen  = $('[data-screen="oc-screen"]'),
+      $body      = $('.acd-body, .acd-page-header, .acd-hero');
+
+  $ocTrigger.on('click touchstart', function(e) {
+    var $triggerVal  = $(this).data('trigger'),
+        $contentMenu = $('body').find('[data-overlay="' + $triggerVal + '"]');
+
+    $ocScreen.addClass('is-visible');
+    $body.addClass('active');
+    $contentMenu.animate({ right: 0, }, 200, function() {});
+    $body.animate({ left: -466, }, 200, function() {});
+
+    e.preventDefault();
+  });
+
+  $ocClose.on('click touchstart', function(e) {
+    $ocScreen.removeClass('is-visible');
+    $body.removeClass('active');
+
+    $ocOverlay.animate({ right: -466, }, 200, function() {});
+    $body.animate({ left: 0, }, 200, function() {});
+
+    e.preventDefault();
+  });
+});
+
 
 // SIMPLE ACCORDION
 

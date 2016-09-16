@@ -88,7 +88,21 @@ h1.acd-text-size--triple {
     font-size: 1.3em;
 }
 
+
+
 }
+
+
+@media screen and (max-width: 559px){
+h1.acd-text-size--triple {
+    color: #8c8e90;
+    margin-bottom: 17px;
+}
+
+}
+
+
+
 @media screen and (min-width: 560px){.acd-hero{height:307.53333px;}
 
 .acd-panel__heading .acd-tile__detail {
