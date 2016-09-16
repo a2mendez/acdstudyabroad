@@ -266,6 +266,15 @@ h1.acd-text-size--triple {
 @media screen and (min-width: 1280px){.acd-hero.acd-hero--dublin{background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../images/hero/Dublin-Castle-2184x1200.jpg)}}
 
 
+
+@media screen and (min-width: 320px){.acd-hero.acd-hero--cliffs{background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../images/hero/Cliffs-480x264.jpg)}}
+@media screen and (min-width: 480px){.acd-hero.acd-hero--cliffs{background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../images/hero/Cliffs-480x264.jpg) ; position: fixed;}}
+@media screen and (min-width: 560px){.acd-hero.acd-hero--cliffs{background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../images/hero/Cliffs-768x422.jpg)}}
+@media screen and (min-width: 768px){.acd-hero.acd-hero--cliffs{background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../images/hero/Cliffs-1024x563.jpg)}}
+@media screen and (min-width: 1024px){.acd-hero.acd-hero--cliffs{background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../images/hero/Cliffs-1280x703.jpg)}}
+@media screen and (min-width: 1280px){.acd-hero.acd-hero--cliffs{background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../images/hero/Cliffs-2184x1200.jpg)}}
+
+
 accordian h1,.headline {
     color: #63666a;
     font-size: 3em;
