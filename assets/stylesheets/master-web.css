@@ -275,6 +275,46 @@ h1.acd-text-size--triple {
 @media screen and (min-width: 1280px){.acd-hero.acd-hero--cliffs{background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../images/hero/cliffs-2184x1200.jpg)}}
 
 
+@media screen and (min-width: 480px){
+	
+	.l-parallax {
+    background-color: #fff;
+    position: relative;
+    top: 35vh;
+}
+	
+	
+}
+
+
+
+@media screen and (min-width: 560px){
+.l-parallax {
+    background-color: #fff;
+    position: relative;
+    top: 35vh;
+}
+
+}
+
+
+@media screen and (min-width: 768px){
+.l-parallax {
+    background-color: #fff;
+    position: relative;
+    top: 47vh;
+}
+
+}
+
+@media screen and (min-width: 1280px){
+.l-parallax {
+    background-color: #fff;
+    position: relative;
+    top: 61vh;
+}
+}
+
 accordian h1,.headline {
     color: #63666a;
     font-size: 3em;
@@ -696,11 +736,7 @@ strong, b {
     display: inline-block;
 }
 
-.l-parallax {
-    background-color: #fff;
-    position: relative;
-    top: 61vh;
-}
+
 
 /** Navigation - Sliding **/
 /**~

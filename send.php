@@ -70,12 +70,12 @@ if(!PHPMailer::validateAddress($to)) {
 }
 $mail->isSMTP();
 $mail->SMTPDebug  = 0;
-$mail->Host       = "smtp.sendgrid.net";
+$mail->Host       = "smtp.mandrillapp.com";
 $mail->Port       = "587";
 $mail->SMTPSecure = "tls";
 $mail->SMTPAuth   = true;
-$mail->Username   = "Lynn.edu";
-$mail->Password   = "Welcome1";
+$mail->Username   = "Lynn University";
+$mail->Password   = "1RocrPqxxE5bbjRrzHvULA";
 $mail->addReplyTo("info@acdstudyabroad.com", "ACD Study Abroad");
 $mail->setFrom("info@acdstudyabroad.com", "ACD Study Abroad");
 $mail->addAddress("amendezt@lynn.edu", "tony");
