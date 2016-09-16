@@ -69,18 +69,18 @@ if(!PHPMailer::validateAddress($to)) {
   throw new phpmailerAppException("Email address " . $to . " is invalid -- aborting!");
 }
 $mail->isSMTP();
-$mail->SMTPDebug  = 2;
-$mail->Host       = "smtp.mandrillapp.com";
+$mail->SMTPDebug  = 0;
+$mail->Host       = "smtp.sendgrid.net";
 $mail->Port       = "587";
 $mail->SMTPSecure = "tls";
 $mail->SMTPAuth   = true;
-$mail->Username   = "Lynn University";
-$mail->Password   = "1RocrPqxxE5bbjRrzHvULA";
+$mail->Username   = "Lynn.edu";
+$mail->Password   = "Welcome1";
 $mail->addReplyTo("info@acdstudyabroad.com", "ACD Study Abroad");
 $mail->setFrom("info@acdstudyabroad.com", "ACD Study Abroad");
-$mail->addAddress("a2mendez@gmail.com", "tony");
-$mail->addBCC("");
-$mail->addCC("");
+$mail->addAddress("amendezt@lynn.edu", "tony");
+$mail->addBCC("SWolf@lynn.edu","Stefan Wolf");
+//$mail->addCC("");
 $mail->Subject  = "ACD Study Abroad - Interested Student";
 //$body = <<<'EOT'
 //testing 123

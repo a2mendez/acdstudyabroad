@@ -515,7 +515,7 @@
                     <div class="ex-panel text">
                         <ul>
                             <li>
-                                <b>Are fees refundable?</b>
+                                <b>Are fees refundable?</b><a name="included"></a>
                                 <p>In most instances, the $300 program deposit is non-refundable. See Withdrawal and Refund Policy in <a href="policies.html">Program Policies, Terms and Conditions</a> for other potentially non-refundable fees.</p>
                             </li>
                             
@@ -810,6 +810,16 @@ $('#ilynn-form').toggleClass('is-closed is-open');
 if ( $('#graduate-form .thanks').length > 0  ) {
 $('#graduate-form').toggleClass('is-closed is-open');
 }
+
+
+// Get hash from query string
+var hash = window.location.hash;
+
+if (hash == "#included" ) {
+
+    $('#ipad-faq-ugrad').toggleClass('is-closed is-open');
+    }
+
 
 });
 </script>
