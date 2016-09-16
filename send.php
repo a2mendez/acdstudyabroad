@@ -76,7 +76,7 @@ $mail->SMTPSecure = "tls";
 $mail->SMTPAuth   = true;
 $mail->Username   = "Lynn University";
 $mail->Password   = "1RocrPqxxE5bbjRrzHvULA";
-$mail->addReplyTo("SWolf@lynn.edu","Stefan Wolf");
+$mail->addReplyTo("SWolf@lynn.edu","Stefan Wolf"); 
 $mail->setFrom("SWolf@lynn.edu","Stefan Wolf");
 $mail->addAddress("amendezt@lynn.edu", "tony");
 $mail->addBCC("SWolf@lynn.edu","Stefan Wolf");
